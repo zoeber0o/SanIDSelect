@@ -5,8 +5,10 @@ from lark_oapi.api.im.v1 import (
     CreateMessageRequest, CreateMessageRequestBody
 )
 
-APP_ID = "你的AppID"
-APP_SECRET = "你的AppSecret"
+APP_ID = "cli_a864be79129f901c"
+APP_SECRET = "Nq1PjRJsWcQKQNFmTyVpfbSOL8aEXBfO"
+chat_id = 'oc_359b218475aea83c9e2caec5989e206a'
+
 
 # 1) OpenAPI 客户端（REST 调用）
 client = lark.Client.builder() \
@@ -65,10 +67,9 @@ def send_image_to_open_id(open_id: str, image_key: str):
 
 if __name__ == "__main__":
     # 本地图片路径
-    img_path = "demo.png"
+    img_path = "./20251014-195840.jpg"
 
     # A) 如果你手上是 chat_id（群/私聊都行）
-    chat_id = "oc_xxxxxxxxxxxxxxxxxxxxxxxxx"
     image_key = upload_image_get_key(img_path)
     msg_id = send_image_to_chat_id(chat_id, image_key)
     print("已发送到 chat_id，message_id:", msg_id)
