@@ -5,9 +5,9 @@ from lark_oapi.api.im.v1 import (
     CreateMessageRequest, CreateMessageRequestBody
 )
 
-APP_ID = "cli_a864be79129f901c"
-APP_SECRET = "Nq1PjRJsWcQKQNFmTyVpfbSOL8aEXBfO"
-chat_id = 'oc_359b218475aea83c9e2caec5989e206a'
+APP_ID = "id"
+APP_SECRET = "secrt"
+chat_id = 'ee'
 
 
 # 1) OpenAPI 客户端（REST 调用）
