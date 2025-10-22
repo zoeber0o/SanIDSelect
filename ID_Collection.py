@@ -14,7 +14,7 @@ import subprocess
 import requests
 
 # 保存目录
-webhub = 'https://open.feishu.cn/open-apis/bot/v2/hook/be80b81c-a5ac-47f4-9b3a-4a4ddf1a99c5'
+webhub = 'url'
 
 #生成图片转码base64
 def image_to_base64(img) -> str:
@@ -65,8 +65,8 @@ def image_to_text() -> str:
     :return: 识别出的文本
     """
     ocr = RapidOCR()  # 初始化一次即可复用
-    TENCENTCLOUD_SECRET_ID = 'AKIDfCWbQ2PZT8XhdJm11mOs9D3f4E8oFRP8'
-    TENCENTCLOUD_SECRET_KEY = 'bz82g5FBuPeeOt9ByYv4yd4HH2atwkKh'
+    TENCENTCLOUD_SECRET_ID = 'yuerid'
+    TENCENTCLOUD_SECRET_KEY = 'youerkey'
     try:
         cred = credential.Credential(TENCENTCLOUD_SECRET_ID,TENCENTCLOUD_SECRET_KEY)
         # cred = credential.Credential("SecretId", "SecretKey", "Token")
