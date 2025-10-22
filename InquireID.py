@@ -2,9 +2,9 @@ import lark_oapi as lark
 import json
 from lark_oapi.api.im.v1 import *
 
-app_id = "cli_a864be79129f901c"
-app_secret = "Nq1PjRJsWcQKQNFmTyVpfbSOL8aEXBfO"
-chatID = 'oc_359b218475aea83c9e2caec5989e206a'
+app_id = "id"
+app_secret = "se"
+chatID = 'e'
 
 
 def do_p2_im_message_receive_v1(data: lark.im.v1.P2ImMessageReceiveV1) -> None:
